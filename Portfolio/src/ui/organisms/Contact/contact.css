@@ -1,0 +1,5 @@
+@media (max-width: 976px) {
+  .contact-section .contact-section__content {
+    flex-direction: column-reverse;
+  }
+}

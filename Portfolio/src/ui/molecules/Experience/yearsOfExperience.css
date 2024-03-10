@@ -1,0 +1,59 @@
+.years-of-experience-numbers-container {
+  justify-content: flex-end;
+}
+.years-of-experience-numbers-container .years-of-experience-numbers {
+  font-size: 22rem;
+  line-height: 0.85;
+}
+
+.years-of-experience-text-container {
+  width: 100%;
+}
+.years-of-experience-text-container .years-of-experience-text {
+  font-size: 5rem;
+}
+
+@media (max-width: 1275px) {
+  .years-of-experience-text-container .years-of-experience-text {
+    font-size: 3.5rem;
+  }
+  .years-of-experience-numbers-container .years-of-experience-numbers {
+    font-size: 15rem;
+  }
+}
+
+@media (max-width: 976px) {
+  .title {
+    font-size: 14rem;
+  }
+  .years-of-experience-numbers-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+  .years-of-experience-text-container {
+    display: flex;
+    justify-content: center;
+  }
+  .years-of-experience-text-container .years-of-experience-text {
+    text-align: center;
+    width: 75%;
+    line-height: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .years-of-experience-numbers-container {
+    margin-bottom: 2rem;
+  }
+  .years-of-experience-numbers-container > div {
+    width: 120px;
+  }
+  .years-of-experience-numbers-container .years-of-experience-numbers {
+    font-size: 12rem;
+  }
+  .years-of-experience-text-container .years-of-experience-text {
+    line-height: 2rem;
+    font-size: 2rem;
+  }
+}
