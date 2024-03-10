@@ -1,0 +1,48 @@
+.project-image-container a {
+  transition: all ease-in-out 800ms;
+  position: relative;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  height: 20rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-image-container img {
+  width: 100%;
+  height: 100%;
+  transition: all ease-in-out 800ms;
+}
+
+.project-image-container:hover img {
+  display: block;
+  transform: rotate(2deg) scale(1.1);
+}
+
+.project-image-container .project-image-container__details {
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background: rgb(0 0 0 / 83%);
+  transition: all ease-in-out 800ms;
+  color: var(--color-white);
+}
+
+.project-image-container:hover .project-image-container__details {
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+
+@media screen and (max-width: 976px) {
+  .project-image-container a {
+    height: 20rem;
+  }
+}
