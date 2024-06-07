@@ -1,13 +1,15 @@
-import React, { ReactElement } from "react"
-
-import { MenuLinks } from "../../../typings/MenuLinks"
+import React, { type ReactElement } from "react"
 import { motion } from "framer-motion"
+import useWindowSize from "../../../hooks/useWindowSize"
+import type { MenuLinks } from "../../../typings/MenuLinks"
+import MobileNav from "./MobileNav"
 
 interface NavbarProps {
   menu: MenuLinks[]
 }
 
 const Navbar = ({ menu }: NavbarProps): ReactElement => {
+  const { isMobile } = useWindowSize()
   const navVariants = {
     hidden: { y: -20, opacity: 0 },
     visible: (index) => ({
@@ -15,6 +17,10 @@ const Navbar = ({ menu }: NavbarProps): ReactElement => {
       opacity: 1,
       transition: { duration: 1, type: "spring", delay: 0.2 * index },
     }),
+  }
+
+  if (isMobile) {
+    return <MobileNav menu={menu} />
   }
 
   return (

@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react"
+import React, { type ReactElement } from "react"
 import AnimatedText from "../../atoms/AnimatedText"
 import { motion } from "framer-motion"
 
@@ -16,11 +16,7 @@ const WorkExperience = ({
   enterprise,
 }: WorkExperienceProps): ReactElement => {
   return (
-    <div
-      className="grid-container items-start"
-      data-scroll
-      data-scroll-speed="0.2"
-    >
+    <div className="px-4 md:px-0 grid-container items-start">
       <div className="col-start-2 text-right px-0 lg:px-10 ">
         <h5 className="text-secondary">
           <AnimatedText text={period} duration={0.6} once />

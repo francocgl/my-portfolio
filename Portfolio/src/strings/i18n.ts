@@ -1,4 +1,4 @@
-import { ReactElement, useContext } from "react"
+import { useContext } from "react"
 import MainContext from "../MainContext"
 import { StringObject } from "./lang/typings"
 import translations from "./lang"

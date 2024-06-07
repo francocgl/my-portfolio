@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react"
 
 interface windowSize {
-  width: number
-  height: number
+  windowSize: { width: number; height: number }
+  isMobile: boolean
 }
 
 const useWindowSize = (): windowSize => {
@@ -11,8 +11,9 @@ const useWindowSize = (): windowSize => {
     height: window.innerHeight,
   })
 
+  const isMobile = windowSize.width < 478
+
   useEffect(() => {
-    // Function to update windowSize whenever the window is resized
     function handleResize() {
       setWindowSize({
         width: window.innerWidth,
@@ -20,16 +21,14 @@ const useWindowSize = (): windowSize => {
       })
     }
 
-    // Add an event listener to the window to handle resizing
     window.addEventListener("resize", handleResize)
 
-    // Remove the event listener when the component unmounts
     return () => {
       window.removeEventListener("resize", handleResize)
     }
-  }, []) // The empty array ensures that this effect runs once after mounting
+  }, [])
 
-  return windowSize
+  return { windowSize, isMobile }
 }
 
 export default useWindowSize

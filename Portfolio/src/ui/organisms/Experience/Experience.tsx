@@ -2,7 +2,6 @@ import React from "react"
 import { workExperience } from "../../../const/workExperience"
 import { PageIndex } from "../../atoms"
 import { WorkExperience, YearsOfExperience } from "../../molecules"
-import "./experience.css"
 
 const Experience = () => {
   return (

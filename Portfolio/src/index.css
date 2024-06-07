@@ -55,6 +55,12 @@ p {
   }
 }
 
+@media screen and (max-width: 476px) {
+  .grid-container {
+    @apply my-20;
+  }
+}
+
 header,
 nav,
 section {
@@ -64,4 +70,8 @@ section {
 
 ::-webkit-scrollbar {
   width: 0;
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
