@@ -1,8 +1,8 @@
-import About from "./About/About"
-import Contact from "./Contact/Contact"
-import Experience from "./Experience/Experience"
-import Footer from "./Footer/Footer"
-import Header from "./Header/Header"
-import Work from "./Work/Work"
+import About from "./About";
+import Contact from "./Contact";
+import Experience from "./Experience";
+import Footer from "./Footer/Footer";
+import Header from "./Header";
+import Work from "./Work";
 
-export { About, Contact, Experience, Header, Work, Footer }
+export { About, Contact, Experience, Header, Work, Footer };
