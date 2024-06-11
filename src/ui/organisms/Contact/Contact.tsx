@@ -1,13 +1,13 @@
-import React from "react"
-import { motion } from "framer-motion"
-import i18n from "../../../strings/i18n"
-import PageIndex from "../../atoms/PageIndex"
-import AnimatedText from "../../atoms/AnimatedText"
-import Footer from "../Footer/Footer"
-import "./contact.css"
+import React from "react";
+import { motion } from "framer-motion";
+import i18n from "../../../strings/i18n";
+import PageIndex from "../../atoms/PageIndex";
+import AnimatedText from "../../atoms/AnimatedText";
+import Footer from "../Footer/Footer";
+import "./contact.css";
 
 const Contact = () => {
-  const myEmail = "cagliolo@gmail.com"
+  const myEmail = "cagliolo@gmail.com";
 
   return (
     <section id="contact" className="contact-section" data-scroll-container>
@@ -26,26 +26,26 @@ const Contact = () => {
             <h6 className="mb-4 text-white">
               <AnimatedText text="- Available for projects!" once />
             </h6>
-            <motion.div
-              initial={{ opacity: 0, y: -80 }}
-              animate={{
-                opacity: 1,
-                y: 0,
-                transition: { duration: 1.2, delay: 0.5 },
-              }}
-            >
-              <a
+            <div>
+              <motion.a
+                initial={{ opacity: 0, y: -80 }}
+                viewport={{ once: true }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1.2, delay: 1 },
+                }}
                 href={`mailto:${myEmail}`}
-                className="text-primary text-3xl lg:text-4xl xl:text-6xl overflow-visible"
+                className="text-primary text-3xl lg:text-4xl xl:text-6xl "
               >
                 {myEmail}
-              </a>
-            </motion.div>
+              </motion.a>
+            </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

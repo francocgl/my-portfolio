@@ -1,5 +1,3 @@
-import i18n from "../strings/i18n"
-
 export const workExperience = [
   {
     period: "2017 - 2020",
@@ -16,10 +14,17 @@ export const workExperience = [
       "Developing high-traffic web applications with React. Implementing platform product features and user interfaces from scratch. Identifying and resolving scalability and performance issues.",
   },
   {
-    period: "2022 - Present",
-    position: "Front End Developer",
+    period: "2022 - 2024",
+    position: "Senior Front End Engineer",
     enterprise: "Global Logic",
     description:
       "Working for a USA Financial Bank. Developing from scratch a 'Make a Payment' high-traffic MFE with React, Redux and TypeScript. Unit testing with Jest and E2E testing with Cucumber Cypress. Implementing new features and keeping high quality code.",
   },
-]
+  {
+    period: "2024 - Present",
+    position: "Senior Software Engineer",
+    enterprise: "Cocos Capital",
+    description:
+      "Working for a financial entity building and maintaining responsive and interactive web applications using React. Implementing complex financial dashboards, trading platforms, and user account management systems.",
+  },
+];

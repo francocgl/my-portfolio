@@ -1,14 +1,14 @@
-import React from "react"
-import AnimatedText from "../../atoms/AnimatedText"
-import { motion } from "framer-motion"
-import "./ProjectImage.css"
+import React from "react";
+import AnimatedText from "../../atoms/AnimatedText";
+import { motion } from "framer-motion";
+import "./ProjectImage.css";
 
 interface ProjectImageProps {
-  category: string
-  date: string
-  image: string
-  link: string
-  name: string
+  category: string;
+  date: string;
+  image: string;
+  link: string;
+  name: string;
 }
 
 const ProjectImage = ({
@@ -24,20 +24,25 @@ const ProjectImage = ({
     },
     visible: {
       opacity: 1,
-      transition: { duration: 1.5 },
+      transition: { ease: "easeInOut", duration: 2 },
     },
-  }
+  };
 
   return (
-    <div className="mb-20 project-image-container overflow-hidden rounded-lg">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      variants={projectVariants}
+      viewport={{ once: true }}
+      className="mb-20 project-image-container overflow-hidden rounded-lg"
+    >
       <motion.a
-        initial="hidden"
-        whileInView="visible"
-        variants={projectVariants}
+        initial={{ y: -300 }}
+        whileInView={{ y: 0 }}
         viewport={{ once: true }}
         href={link}
         target="_blank"
-        className="relative shadow-md block overflow-hidden"
+        className="relative shadow-md block"
       >
         <img
           alt=""
@@ -58,8 +63,8 @@ const ProjectImage = ({
           </div>
         </div>
       </motion.a>
-    </div>
-  )
-}
+    </motion.div>
+  );
+};
 
-export default ProjectImage
+export default ProjectImage;

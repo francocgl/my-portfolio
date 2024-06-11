@@ -1,18 +1,19 @@
-import React, { useLayoutEffect, useRef } from "react"
-import gsap from "gsap"
-import { Navbar } from "../../molecules"
-import { menu } from "../../../const/menu"
-import { AnimatedText, ProgressBar } from "../../atoms"
-import "./header.css"
+import React, { useLayoutEffect, useRef } from "react";
+import gsap from "gsap";
+import { motion } from "framer-motion";
+import { Navbar } from "../../molecules";
+import { menu } from "../../../const/menu";
+import { AnimatedText, ProgressBar } from "../../atoms";
+import "./header.css";
 
 export default function Header() {
-  const comp = useRef(null)
+  const comp = useRef(null);
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      const t1 = gsap.timeline()
+      const t1 = gsap.timeline();
 
-      const titles = [".title-line-1", ".title-line-2", ".title-line-3"]
+      const titles = [".title-line-1", ".title-line-2", ".title-line-3"];
 
       t1.fromTo(
         titles,
@@ -29,11 +30,11 @@ export default function Header() {
           ease: "power2.out",
         },
         0
-      )
-    }, comp)
+      );
+    }, comp);
 
-    return () => ctx.revert()
-  }, [])
+    return () => ctx.revert();
+  }, []);
 
   return (
     <header
@@ -74,8 +75,22 @@ export default function Header() {
         data-scroll-speed="-0.3"
         className="text-black absolute bottom-[3.5rem] xl:bottom-[8.5rem]"
       >
-        <p className="title-line-3 whitespace-pre">scroll down</p>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            delay: 2,
+            ease: "easeInOut",
+            duration: 1,
+            type: "sping",
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
+          className="title-line-3 whitespace-pre"
+        >
+          scroll down
+        </motion.p>
       </div>
     </header>
-  )
+  );
 }
