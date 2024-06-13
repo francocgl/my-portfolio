@@ -4,7 +4,7 @@ import { useLocoScroll } from "../../hooks/useLocoScroll";
 
 const Portfolio = () => {
   useLocoScroll();
-  throw new Error("asd");
+
   return (
     <main className="bg-black text-white" data-scroll-container>
       <Header />
