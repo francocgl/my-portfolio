@@ -24,7 +24,10 @@ const ProjectImage = ({
     },
     visible: {
       opacity: 1,
-      transition: { ease: "easeInOut", duration: 2 },
+      transition: {
+        ease: "easeInOut",
+        duration: 2,
+      },
     },
   };
 
@@ -34,19 +37,17 @@ const ProjectImage = ({
       whileInView="visible"
       variants={projectVariants}
       viewport={{ once: true }}
-      className="mb-20 project-image-container overflow-hidden rounded-lg"
+      className="mb-20 project-image-container overflow-hidden shadow-md rounded-lg "
     >
       <motion.a
-        initial={{ y: -300 }}
-        whileInView={{ y: 0 }}
         viewport={{ once: true }}
         href={link}
         target="_blank"
-        className="relative shadow-md block"
+        className="relative block"
       >
         <img
           alt=""
-          src={"/src/" + image}
+          src={"/static/images/" + image}
           className="h-full w-full object-cover "
         />
         <div className="project-image-container__details">
