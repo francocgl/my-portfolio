@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import i18n from "../../../strings/i18n";
 import PageIndex from "../../atoms/PageIndex";
 import AnimatedText from "../../atoms/AnimatedText";
 import Footer from "../Footer/Footer";
@@ -11,7 +10,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact-section" data-scroll-container>
-      <PageIndex number={3} page={i18n({ contact: "contact" })} />
+      <PageIndex number={3} page="Contact" />
       <div className="grid-container lg:items-end contact-section__content  px-4 md:px-0">
         <div className="md:col-start-2">
           <Footer />
