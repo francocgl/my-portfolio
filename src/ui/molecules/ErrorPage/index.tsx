@@ -1,11 +1,11 @@
-import React from "react"
+import React from "react";
 
 const ErrorPage = ({ error, resetErrorBoundary }) => {
   return (
     <main className=" bg-white h-screen flex justify-center items-center">
       <div role="alert" className="text-center">
         <p className="mb-4 text-xl md:text-4xl font-bold">
-          Something went wrong
+          Sorry, something went wrong!
         </p>
         <pre className="mb-4 ">{error.message}</pre>
         <button
@@ -16,6 +16,7 @@ const ErrorPage = ({ error, resetErrorBoundary }) => {
         </button>
       </div>
     </main>
-  )
-}
-export default ErrorPage
+  );
+};
+
+export default ErrorPage;

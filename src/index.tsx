@@ -2,7 +2,8 @@ import React from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import ReactDOM from "react-dom/client";
 import Portfolio from "./ui/templates/Portfolio";
-import { ErrorPage } from "./ui/molecules";
+import ErrorPage from "./ui/molecules/ErrorPage";
+
 import "./index.css";
 
 const root = ReactDOM.createRoot(
