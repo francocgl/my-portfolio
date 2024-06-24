@@ -73,7 +73,7 @@ export default function Header() {
       <div
         data-scroll="0"
         data-scroll-speed="-0.3"
-        className="text-black absolute bottom-[3.5rem] xl:bottom-[8.5rem]"
+        className="text-black absolute bottom-[10rem] xl:bottom-[8.5rem]"
       >
         <motion.p
           initial={{ opacity: 0 }}

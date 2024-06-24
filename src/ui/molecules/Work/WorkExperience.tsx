@@ -1,12 +1,12 @@
-import React, { type ReactElement } from "react"
-import AnimatedText from "../../atoms/AnimatedText"
-import { motion } from "framer-motion"
+import React, { type ReactElement } from "react";
+import AnimatedText from "../../atoms/AnimatedText";
+import { motion } from "framer-motion";
 
 interface WorkExperienceProps {
-  period: string
-  position: string
-  description: string
-  enterprise: string
+  period: string;
+  position: string;
+  description: string;
+  enterprise: string;
 }
 
 const WorkExperience = ({
@@ -43,7 +43,7 @@ const WorkExperience = ({
         </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default WorkExperience
+export default WorkExperience;

@@ -4,12 +4,6 @@
   --query-md: 768px;
   --query-lg: 976px;
   --query-xl: 1440px;
-
-  /* Colors  */
-  --color-primary: #68f205;
-  --color-secondary: #69868c;
-  --color-black: #232226;
-  --color-white: #f2f2f2;
 }
 
 @tailwind base;
