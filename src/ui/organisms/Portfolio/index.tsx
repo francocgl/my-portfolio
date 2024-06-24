@@ -2,33 +2,16 @@ import React from "react";
 import { PageIndex } from "../../atoms";
 import ProjectImage from "../../molecules/Work/ProjectImage";
 import AnimatedText from "../../atoms/AnimatedText";
-import { motion } from "framer-motion";
 import { portfolio } from "../../../const/portfolio";
 
-const Work = () => {
-  const variantSpan = {
-    hidden: {
-      opacity: 0,
-      y: -40,
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 1.2,
-        delay: 0.5,
-        staggerChildren: 1,
-      },
-    },
-  };
-
+const Portfolio = () => {
   return (
     <section
       className="bg-white text-black pb-5 md:pb-40"
-      id="work"
+      id="portfolio"
       data-scroll-section
     >
-      <PageIndex number={2} page="Work"></PageIndex>
+      <PageIndex number={2} page="Portfolio"></PageIndex>
       <div className="grid-container">
         <div className="col-start-1 col-span-2">
           <div className="md:sticky top-0 px-2 md:px-0">
@@ -70,4 +53,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Portfolio;

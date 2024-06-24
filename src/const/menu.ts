@@ -1,4 +1,4 @@
-import type { MenuLinks } from "../typings/MenuLinks"
+import type { MenuLinks } from "../typings/MenuLinks";
 
 export const menu: MenuLinks[] = [
   {
@@ -10,11 +10,11 @@ export const menu: MenuLinks[] = [
     link: "#experience",
   },
   {
-    name: "Work",
-    link: "#work",
+    name: "Portfolio",
+    link: "#portfolio",
   },
   {
     name: "Contact",
     link: "#contact",
   },
-]
+];

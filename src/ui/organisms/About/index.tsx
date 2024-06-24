@@ -50,6 +50,7 @@ const About = () => {
             <motion.img
               initial="hidden"
               whileInView="visible"
+              variants={variants}
               viewport={{ once: true }}
               src="/static/images/profile.jpg"
               alt="profile picture"

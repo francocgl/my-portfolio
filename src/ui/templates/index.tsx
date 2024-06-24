@@ -1,8 +1,8 @@
 import React from "react";
-import { About, Header, Contact, Work, Experience } from "../organisms";
+import { About, Header, Contact, Portfolio, Experience } from "../organisms";
 import { useLocoScroll } from "../../hooks/useLocoScroll";
 
-const Portfolio = () => {
+const App = () => {
   useLocoScroll();
 
   return (
@@ -10,10 +10,10 @@ const Portfolio = () => {
       <Header />
       <About />
       <Experience />
-      <Work />
+      <Portfolio />
       <Contact />
     </main>
   );
 };
 
-export default Portfolio;
+export default App;
