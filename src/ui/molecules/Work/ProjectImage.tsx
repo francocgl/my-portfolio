@@ -44,6 +44,7 @@ const ProjectImage = ({
         href={link}
         target="_blank"
         className="relative block"
+        aria-label={`Navigate to ${name} project link`}
       >
         <img
           alt=""

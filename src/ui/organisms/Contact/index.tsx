@@ -22,9 +22,9 @@ const Contact = () => {
             </h2>
           </div>
           <div className="mb-20 lg:mb-0">
-            <h6 className="mb-4 text-white">
+            <p className="mb-4 text-white">
               <AnimatedText text="- Available for projects!" once />
-            </h6>
+            </p>
             <div>
               <motion.a
                 initial={{ opacity: 0, y: -80 }}
