@@ -1,4 +1,5 @@
 import React, { type ReactElement } from "react";
+import { motion } from "framer-motion";
 import { MenuLinks } from "../../../typings/MenuLinks";
 import { AnimatedText } from "../../atoms";
 
@@ -16,7 +17,12 @@ const FooterSocialMedia = ({
       </h5>
       <ul className="flex">
         {socialMedia.map((el, index) => (
-          <li className="mr-6" key={index}>
+          <motion.li
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="mr-6"
+            key={index}
+          >
             <a
               className="text-secondary hover:text-primary text-xl whitespace-pre"
               href={el.link}
@@ -25,7 +31,7 @@ const FooterSocialMedia = ({
             >
               <AnimatedText text={el.name} once letters />
             </a>
-          </li>
+          </motion.li>
         ))}
       </ul>
     </>

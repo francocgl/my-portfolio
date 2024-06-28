@@ -36,9 +36,11 @@ const Navbar = ({ menu }: NavbarProps): ReactElement => {
         </motion.p>
       </div>
       <div className="col-start-3">
-        <ul className="flex justify-between overflow-hidden ">
+        <ul className="flex justify-between">
           {menu.map((item, index) => (
             <motion.li
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
               initial="hidden"
               whileInView="visible"
               key={index}

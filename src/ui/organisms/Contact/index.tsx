@@ -11,13 +11,13 @@ const Contact = () => {
   return (
     <section id="contact" className="contact-section" data-scroll-container>
       <PageIndex number={3} page="Contact" />
-      <div className="grid-container lg:items-end contact-section__content  px-4 md:px-0">
+      <div className="grid-container lg:items-end contact-section__content px-4 md:px-0">
         <div className="md:col-start-2">
           <Footer />
         </div>
         <div className="md:col-start-3">
           <div className="w-1/2">
-            <h2 className="text-5xl lg:text-6xl xl:text-8xl mb-10">
+            <h2 className="text-5xl lg:text-6xl xl:text-[5em] mb-10  lg:mt-[-30px]">
               <AnimatedText text="Let´s work together" once />
             </h2>
           </div>

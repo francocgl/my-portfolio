@@ -40,7 +40,7 @@ export default function Header() {
     <header
       id="header"
       ref={comp}
-      className="h-screen relative flex flex-col items-center justify-center bg-white"
+      className="relative flex flex-col items-center justify-center bg-white"
       data-scroll-section
     >
       <ProgressBar />
