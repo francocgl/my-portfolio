@@ -37,10 +37,9 @@ const MobileNav = ({ menu }) => {
       <nav className="absolute top-0 right-0 text-black">
         <motion.button
           initial="hidden"
-          whileInView="visible"
+          animate="visible"
           whileTap={{ rotate: 180, transition: { duration: 0.2 } }}
           variants={buttonVariants}
-          viewport={{ once: true }}
           onClick={() => handleMenuClick(true)}
         >
           <FontAwesomeIcon icon={faBars} className="text-3xl" />
