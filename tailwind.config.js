@@ -11,7 +11,7 @@ export default {
         xl: "1440px",
       },
       colors: {
-        primary: "#C4EAF2 ",
+        primary: "#C4EAF2",
         secondary: "#69868C",
         white: "#F2F2F2",
         black: "#232226",
@@ -23,4 +23,4 @@ export default {
     },
   },
   plugins: [],
-}
+};

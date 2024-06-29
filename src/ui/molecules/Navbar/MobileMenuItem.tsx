@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 import { MenuLinks } from "../../../typings/MenuLinks";
 
 const MobileMenuItem = ({
@@ -9,7 +11,11 @@ const MobileMenuItem = ({
   onClick: () => void;
 }) => {
   return (
-    <li className="pt-10 pb-10" onClick={onClick}>
+    <motion.li
+      whileTap={{ x: "20%", scale: 1.1 }}
+      className="pt-10 pb-10"
+      onClick={onClick}
+    >
       <a
         href={item.link}
         className="text-5xl font-normal underline block"
@@ -17,7 +23,7 @@ const MobileMenuItem = ({
       >
         {item.name}
       </a>
-    </li>
+    </motion.li>
   );
 };
 

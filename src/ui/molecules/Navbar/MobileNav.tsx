@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import MobileMenuItem from "./MobileMenuItem";
 
 const MobileNav = ({ menu }) => {

@@ -4,6 +4,8 @@
   --query-md: 768px;
   --query-lg: 976px;
   --query-xl: 1440px;
+
+  --color-primary: #c4eaf2;
 }
 
 @tailwind base;
