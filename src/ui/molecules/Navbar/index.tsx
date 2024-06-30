@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import useWindowSize from "../../../hooks/useWindowSize";
 import type { MenuLinks } from "../../../typings/MenuLinks";
 import MobileNav from "./MobileNav";
+import { i18n } from "../../../strings";
 
 interface NavbarProps {
   menu: MenuLinks[];
@@ -12,13 +13,13 @@ const Navbar = ({ menu }: NavbarProps): ReactElement => {
   const { isMobile } = useWindowSize();
   const navVariants = {
     hidden: { y: -20, opacity: 0 },
-    visible: (index) => ({
+    visible: (index: number) => ({
       y: 0,
       opacity: 1,
       transition: { duration: 1, type: "spring", delay: 0.2 * index },
     }),
   };
-
+  console.log(i18n("about"));
   if (isMobile) {
     return <MobileNav menu={menu} />;
   }
@@ -32,7 +33,7 @@ const Navbar = ({ menu }: NavbarProps): ReactElement => {
           className="hidden lg:block text-xl text-secondary"
           variants={navVariants}
         >
-          Digital Designer
+          {i18n("digitalDesigner")}
         </motion.p>
       </div>
       <div className="col-start-3">
@@ -54,7 +55,7 @@ const Navbar = ({ menu }: NavbarProps): ReactElement => {
                 data-scroll-to-duration="2"
                 className="text-xl font-normal underline hover:text-secondary"
               >
-                {item.name}
+                {i18n(item.name)}
               </a>
             </motion.li>
           ))}

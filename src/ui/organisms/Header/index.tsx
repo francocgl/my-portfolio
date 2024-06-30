@@ -3,7 +3,10 @@ import gsap from "gsap";
 import { motion } from "framer-motion";
 import { Navbar } from "../../molecules";
 import { menu } from "../../../const/menu";
+import { i18n } from "../../../strings";
 import { AnimatedText, ProgressBar } from "../../atoms";
+import LangButtons from "../../molecules/LangButtons";
+
 import "./header.css";
 
 export default function Header() {
@@ -67,7 +70,7 @@ export default function Header() {
           data-scroll-speed="0.2"
           className="title-line-3 text-sm md:text-lg xl:text-xl font-bold absolute top-[-30px] right-5 text-black white-space-pre"
         >
-          <AnimatedText text="Creative developer." once />
+          <AnimatedText text="Software Engineer." once />
         </p>
       </div>
       <div
@@ -88,8 +91,11 @@ export default function Header() {
           }}
           className="title-line-3 whitespace-pre"
         >
-          scroll down
+          {i18n("scrollDown")}
         </motion.p>
+      </div>
+      <div className="hidden md:block absolute left-10 top-1/2 -rotate-90 transform -translate-y-1/2">
+        <LangButtons />
       </div>
     </header>
   );

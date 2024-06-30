@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { i18n } from "../../../strings";
 import PageIndex from "../../atoms/PageIndex";
 import AnimatedText from "../../atoms/AnimatedText";
 import Footer from "../Footer/Footer";
@@ -10,7 +11,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact-section" data-scroll-container>
-      <PageIndex number={3} page="Contact" />
+      <PageIndex number={3} page={i18n("menuContact")} />
       <div className="grid-container lg:items-end contact-section__content px-4 md:px-0">
         <div className="md:col-start-2">
           <Footer />
@@ -18,12 +19,12 @@ const Contact = () => {
         <div className="md:col-start-3">
           <div className="w-1/2">
             <h2 className="text-5xl lg:text-6xl xl:text-[5em] mb-10  lg:mt-[-30px]">
-              <AnimatedText text="Let´s work together" once />
+              <AnimatedText text={i18n("contactWorkHeading")} once />
             </h2>
           </div>
           <div className="mb-20 lg:mb-0">
             <p className="mb-4 text-white">
-              <AnimatedText text="- Available for projects!" once />
+              <AnimatedText text={i18n("contactAvailable")} once />
             </p>
             <div>
               <motion.a

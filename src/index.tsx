@@ -1,6 +1,7 @@
 import React from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import ReactDOM from "react-dom/client";
+import { ContextProvider } from "./context/ContextProvider";
 import App from "./ui/templates";
 import ErrorPage from "./ui/molecules/ErrorPage";
 
@@ -15,6 +16,8 @@ root.render(
     FallbackComponent={ErrorPage}
     onReset={() => console.log("Error boundary reset")}
   >
-    <App />
+    <ContextProvider>
+      <App />
+    </ContextProvider>
   </ErrorBoundary>
 );

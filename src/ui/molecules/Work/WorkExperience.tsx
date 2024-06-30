@@ -1,6 +1,7 @@
 import React, { type ReactElement } from "react";
-import AnimatedText from "../../atoms/AnimatedText";
 import { motion } from "framer-motion";
+import AnimatedText from "../../atoms/AnimatedText";
+import { i18n } from "../../../strings";
 
 interface WorkExperienceProps {
   period: string;
@@ -39,7 +40,7 @@ const WorkExperience = ({
           />
         </div>
         <p>
-          <AnimatedText text={description} once />
+          <AnimatedText text={i18n(description)} once />
         </p>
       </div>
     </div>

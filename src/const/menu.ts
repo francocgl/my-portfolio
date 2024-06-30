@@ -2,19 +2,19 @@ import type { MenuLinks } from "../typings/MenuLinks";
 
 export const menu: MenuLinks[] = [
   {
-    name: "About",
+    name: "menuAbout",
     link: "#about",
   },
   {
-    name: "Experience",
+    name: "menuExperience",
     link: "#experience",
   },
   {
-    name: "Portfolio",
+    name: "menuPortfolio",
     link: "#portfolio",
   },
   {
-    name: "Contact",
+    name: "menuContact",
     link: "#contact",
   },
 ];

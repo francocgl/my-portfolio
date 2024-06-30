@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
+import LangButtons from "../LangButtons";
 import MobileMenuItem from "./MobileMenuItem";
 
 const MobileNav = ({ menu }) => {
@@ -14,17 +15,17 @@ const MobileNav = ({ menu }) => {
   const variants = {
     open: {
       x: 0,
-      transition: { duration: 0.6, delay: 0.4 },
+      transition: { duration: 0.7, delay: 0.3 },
     },
     closed: {
       x: "110%",
-      transition: { duration: 0.6, delay: 0.3 },
+      transition: { duration: 0.6, delay: 0.8 },
     },
   };
 
   const buttonVariants = {
     hidden: {
-      x: 100,
+      x: -100,
     },
     visible: {
       x: 0,
@@ -34,16 +35,20 @@ const MobileNav = ({ menu }) => {
 
   return (
     <>
-      <nav className="absolute top-0 right-0 text-black">
+      <nav className="flex w-full justify-between absolute top-0 left-0 text-black">
         <motion.button
           initial="hidden"
           animate="visible"
-          whileTap={{ rotate: 180, transition: { duration: 0.2 } }}
+          whileTap={{
+            rotate: 180,
+            transition: { type: "spring", duration: 0.2 },
+          }}
           variants={buttonVariants}
           onClick={() => handleMenuClick(true)}
         >
           <FontAwesomeIcon icon={faBars} className="text-3xl" />
         </motion.button>
+        <LangButtons />
       </nav>
 
       <motion.div
@@ -54,7 +59,10 @@ const MobileNav = ({ menu }) => {
       >
         <div className="flex justify-end mb-5">
           <motion.button
-            whileTap={{ rotate: 90, transition: { duration: 0.2 } }}
+            whileTap={{
+              rotate: 90,
+              transition: { type: "spring", duration: 0.2 },
+            }}
             onClick={() => handleMenuClick(false)}
           >
             <FontAwesomeIcon
@@ -63,18 +71,17 @@ const MobileNav = ({ menu }) => {
             />
           </motion.button>
         </div>
-        <motion.ul
-          variants={variants}
-          className="flex flex-col justify-between overflow-hidden"
-        >
+        <ul className="flex flex-col justify-between overflow-hidden">
           {menu.map((item, index) => (
             <MobileMenuItem
               key={`${item.name}-${index}`}
+              index={index}
+              isMenuOpen={isMenuOpen}
               item={item}
               onClick={() => handleMenuClick(false)}
             />
           ))}
-        </motion.ul>
+        </ul>
       </motion.div>
     </>
   );

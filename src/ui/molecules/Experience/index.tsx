@@ -1,28 +1,29 @@
-import { motion, useInView } from "framer-motion"
-import React, { useEffect, useMemo, useRef, useState } from "react"
-import { AnimatedText } from "../../atoms"
-import "./yearsOfExperience.css"
+import { motion, useInView } from "framer-motion";
+import React, { useEffect, useMemo, useRef, useState } from "react";
+import { i18n } from "../../../strings";
+import { AnimatedText } from "../../atoms";
+import "./yearsOfExperience.css";
 
 const YearsOfExperience = () => {
-  const [yearsInView, setYearsInView] = useState(0)
-  const ref = useRef(null)
-  const isInView = useInView(ref)
-  const currentYear = new Date().getFullYear()
-  const startingYear = 2018
+  const [yearsInView, setYearsInView] = useState(0);
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+  const currentYear = new Date().getFullYear();
+  const startingYear = 2018;
 
   const calculateYears = useMemo(() => {
-    return currentYear - startingYear
-  }, [])
+    return currentYear - startingYear;
+  }, []);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       if (yearsInView < calculateYears && isInView) {
-        setYearsInView(yearsInView + 1)
+        setYearsInView(yearsInView + 1);
       }
-    }, 300)
+    }, 300);
 
-    return () => clearTimeout(timer)
-  }, [isInView, yearsInView])
+    return () => clearTimeout(timer);
+  }, [isInView, yearsInView]);
 
   return (
     <div ref={ref} className="grid-container text-black">
@@ -42,12 +43,12 @@ const YearsOfExperience = () => {
       <div>
         <div className="col-start-3 years-of-experience-text-container">
           <h2 className="years-of-experience-text">
-            <AnimatedText text="Years of experience working as" once />
+            <AnimatedText text={i18n("expYearsOf")} once />
           </h2>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default YearsOfExperience
+export default YearsOfExperience;
