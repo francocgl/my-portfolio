@@ -67,7 +67,7 @@ export default function Header() {
           data-scroll-speed="0.2"
           className="title-line-3 text-sm md:text-lg xl:text-xl font-bold absolute top-[-30px] right-5 text-black white-space-pre"
         >
-          <AnimatedText text="Creative developer." once />
+          <AnimatedText text="Software Engineer." once />
         </p>
       </div>
       <div

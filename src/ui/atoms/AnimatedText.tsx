@@ -1,11 +1,11 @@
-import React, { useRef } from "react"
-import { motion, useInView } from "framer-motion"
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 interface AnimatedTextProps {
-  text: string
-  once?: boolean
-  letters?: boolean
-  duration?: number
+  text: string;
+  once?: boolean;
+  letters?: boolean;
+  duration?: number;
 }
 
 const AnimatedText = ({
@@ -14,9 +14,9 @@ const AnimatedText = ({
   letters,
   duration = 1,
 }: AnimatedTextProps) => {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { amount: 1, once })
-  const split = letters ? "" : " "
+  const ref = useRef(null);
+  const isInView = useInView(ref, { amount: 1, once });
+  const split = letters ? "" : " ";
   const defaultAnimations = {
     hidden: {
       opacity: 0,
@@ -27,7 +27,7 @@ const AnimatedText = ({
       y: 0,
       transition: { duration: duration },
     },
-  }
+  };
 
   return (
     <motion.span
@@ -48,7 +48,7 @@ const AnimatedText = ({
         </span>
       ))}
     </motion.span>
-  )
-}
+  );
+};
 
-export default AnimatedText
+export default AnimatedText;

@@ -14,11 +14,11 @@ const MobileNav = ({ menu }) => {
   const variants = {
     open: {
       x: 0,
-      transition: { duration: 0.6, delay: 0.4 },
+      transition: { duration: 0.7, delay: 0.3 },
     },
     closed: {
       x: "110%",
-      transition: { duration: 0.6, delay: 0.3 },
+      transition: { duration: 0.6, delay: 0.8 },
     },
   };
 
@@ -38,7 +38,10 @@ const MobileNav = ({ menu }) => {
         <motion.button
           initial="hidden"
           animate="visible"
-          whileTap={{ rotate: 180, transition: { duration: 0.2 } }}
+          whileTap={{
+            rotate: 180,
+            transition: { type: "spring", duration: 0.2 },
+          }}
           variants={buttonVariants}
           onClick={() => handleMenuClick(true)}
         >
@@ -54,7 +57,10 @@ const MobileNav = ({ menu }) => {
       >
         <div className="flex justify-end mb-5">
           <motion.button
-            whileTap={{ rotate: 90, transition: { duration: 0.2 } }}
+            whileTap={{
+              rotate: 90,
+              transition: { type: "spring", duration: 0.2 },
+            }}
             onClick={() => handleMenuClick(false)}
           >
             <FontAwesomeIcon
@@ -63,18 +69,17 @@ const MobileNav = ({ menu }) => {
             />
           </motion.button>
         </div>
-        <motion.ul
-          variants={variants}
-          className="flex flex-col justify-between overflow-hidden"
-        >
+        <ul className="flex flex-col justify-between overflow-hidden">
           {menu.map((item, index) => (
             <MobileMenuItem
               key={`${item.name}-${index}`}
+              index={index}
+              isMenuOpen={isMenuOpen}
               item={item}
               onClick={() => handleMenuClick(false)}
             />
           ))}
-        </motion.ul>
+        </ul>
       </motion.div>
     </>
   );
