@@ -24,8 +24,10 @@ const LangButtons = () => {
               whileInView={{ x: "0" }}
               transition={{ duration: 1, delay: index * 0.5 }}
               viewport={{ once: true }}
-              className={`py-[0.5px] text-xl ${
-                language === lang ? isActive : "text-secondary"
+              className={`hover:border-b-2 py-[0.5px] text-xl ${
+                language === lang
+                  ? isActive
+                  : "text-secondary hover:border-secondary"
               }`}
               onClick={() => changeLang(language)}
             >

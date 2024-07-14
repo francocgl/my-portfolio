@@ -42,6 +42,42 @@ p {
   .grid-container.no-margin {
     @apply m-0;
   }
+
+  .bg-shape {
+    position: absolute;
+    height: 400px;
+    border-radius: 100%;
+    width: 400px;
+    filter: blur(80px);
+    z-index: 0;
+  }
+
+  .bg-shape-1 {
+    background: rgb(196, 234, 242);
+    background: linear-gradient(
+      298deg,
+      rgb(200, 222, 226) 0%,
+      rgba(105, 134, 140, 0.3225665266106442) 100%
+    );
+  }
+
+  .bg-shape-2 {
+    background: radial-gradient(
+      circle,
+      rgba(242, 196, 215, 1) 0%,
+      rgb(164, 208, 215) 100%
+    );
+  }
+
+  .bg-shape-3 {
+    background: radial-gradient(
+      circle,
+      rgb(201, 200, 200) 0%,
+      rgb(164, 208, 215) 100%
+    );
+    width: 600px;
+    height: 600px;
+  }
 }
 
 @media screen and (max-width: 976px) {
@@ -55,6 +91,15 @@ p {
   .grid-container {
     @apply my-20;
   }
+
+  .bg-shape {
+    position: absolute;
+    height: 200px;
+    border-radius: 100%;
+    width: 200px;
+    filter: blur(80px);
+    z-index: 0;
+  }
 }
 
 header,
@@ -64,6 +109,10 @@ section {
   @apply p-4 md:p-6;
 }
 
+section {
+  overflow: hidden;
+  position: relative;
+}
 ::-webkit-scrollbar {
   width: 0;
 }

@@ -35,7 +35,7 @@ export const languages = {
   },
   ES: {
     aboutIntroduction:
-      "Hola! Mi nombre es Franco, desarrollador de software y diseñador grafico argentino",
+      "Hola! Soy Franco, Software Engineer y Diseñador Grafico Argentino",
     aboutDescriptionOne:
       "Como buen fanático del fútbol y entusiasta de las criptomonedas, llevo mi pasión por el juego a mi trabajo como ingeniero. Me enfoco en aplicar las últimas tendencias en tecnologías y lenguajes de programación, creando soluciones solventes y escalables para distintos negocios.",
     aboutDescriptionTwo:

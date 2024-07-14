@@ -25,7 +25,7 @@ const Navbar = ({ menu }: NavbarProps): ReactElement => {
   }
 
   return (
-    <nav className="grid-container no-margin absolute top-5 right-0 left-0 flex justify-between text-black">
+    <nav className="z-10 grid-container no-margin absolute top-5 right-0 left-0 flex justify-between text-black">
       <div className="col-start-2 overflow-hidden">
         <motion.p
           initial="hidden"

@@ -48,7 +48,7 @@ export default function Header() {
     >
       <ProgressBar />
       <Navbar menu={menu} />
-      <div className="relative">
+      <div className="relative z-20">
         <h1 className="text-black text-right  font-extralight uppercase title">
           <span
             className="font-thin block title-line-1"
@@ -97,6 +97,16 @@ export default function Header() {
       <div className="hidden md:block absolute left-10 top-1/2 -rotate-90 transform -translate-y-1/2">
         <LangButtons />
       </div>
+      <div
+        data-scroll="0"
+        data-scroll-speed="-0.3"
+        className="bg-shape bg-shape-1 top-6 left-20"
+      />
+      <div
+        data-scroll="0"
+        data-scroll-speed="-0.3"
+        className="bg-shape bg-shape-1 top-1/2 left-1/2"
+      />
     </header>
   );
 }
