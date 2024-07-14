@@ -21,7 +21,7 @@ const LangButtons = () => {
           <div className="overflow-hidden">
             <motion.button
               initial={{ x: "-100%" }}
-              whileInView={{ x: "0" }}
+              animate={{ x: "0" }}
               transition={{ duration: 1, delay: index * 0.5 }}
               viewport={{ once: true }}
               className={`hover:border-b-2 py-[0.5px] text-xl ${
