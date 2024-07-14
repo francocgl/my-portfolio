@@ -97,16 +97,6 @@ export default function Header() {
       <div className="hidden md:block absolute left-10 top-1/2 -rotate-90 transform -translate-y-1/2">
         <LangButtons />
       </div>
-      <div
-        data-scroll="0"
-        data-scroll-speed="-0.3"
-        className="bg-shape bg-shape-1 top-6 left-20"
-      />
-      <div
-        data-scroll="0"
-        data-scroll-speed="-0.3"
-        className="bg-shape bg-shape-1 top-1/2 left-1/2"
-      />
     </header>
   );
 }

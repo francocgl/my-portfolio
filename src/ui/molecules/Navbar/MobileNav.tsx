@@ -55,7 +55,7 @@ const MobileNav = ({ menu }) => {
         initial={{ x: "100%" }}
         animate={isMenuOpen ? "open" : "closed"}
         variants={variants}
-        className="bg-black fixed top-0 w-full h-screen p-4 z-10"
+        className="bg-black fixed top-0 w-full h-screen p-4 z-30"
       >
         <div className="flex justify-end mb-5">
           <motion.button
