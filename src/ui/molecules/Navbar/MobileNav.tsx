@@ -1,21 +1,21 @@
-import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
+import React, { useState } from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBars, faClose } from "@fortawesome/free-solid-svg-icons"
 
 const MobileNav = ({ menu }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const handleMenuClick = (isOpen) => {
-    const body = document.body;
+    const body = document.body
 
     if (isOpen) {
-      body.classList.add("no-scroll");
+      body.classList.add("no-scroll")
     } else {
-      body.classList.remove("no-scroll");
+      body.classList.remove("no-scroll")
     }
 
-    setIsMenuOpen(isOpen);
-  };
+    setIsMenuOpen(isOpen)
+  }
 
   return (
     <>
@@ -41,11 +41,7 @@ const MobileNav = ({ menu }) => {
                 className="pt-10   pb-10  "
                 onClick={() => handleMenuClick(false)}
               >
-                <a
-                  href={item.link}
-                  className="text-5xl font-normal underline"
-                  aria-label={`Navigate to section ${item.name}`}
-                >
+                <a href={item.link} className="text-5xl font-normal underline">
                   {item.name}
                 </a>
               </li>
@@ -54,7 +50,7 @@ const MobileNav = ({ menu }) => {
         </div>
       )}
     </>
-  );
-};
+  )
+}
 
-export default MobileNav;
+export default MobileNav

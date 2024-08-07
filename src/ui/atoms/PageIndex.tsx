@@ -1,13 +1,13 @@
-import { motion } from "framer-motion";
-import React from "react";
+import { motion } from "framer-motion"
+import React from "react"
 
 interface PageIndexProps {
-  number: number;
-  page: string;
+  number: number
+  page: string
 }
 
 const PageIndex = ({ number, page }: PageIndexProps) => {
-  const pageNumber = `0${number}.`;
+  const pageNumber = `0${number}.`
 
   const variants = {
     hidden: { opacity: 0, x: -80 },
@@ -16,7 +16,7 @@ const PageIndex = ({ number, page }: PageIndexProps) => {
       x: 0,
       transition: { duration: 1.1, delay: 0.3, type: "spring" },
     },
-  };
+  }
 
   return (
     <div className="grid-container" data-scroll data-scroll-speed="-0.05">
@@ -26,24 +26,24 @@ const PageIndex = ({ number, page }: PageIndexProps) => {
           whileInView="visible"
           variants={variants}
           viewport={{ once: true, amount: 0.5 }}
-          className="text-lg font-bold block"
+          className="pageNumber-number text-lg font-bold block"
         >
           {pageNumber}
         </motion.span>
       </div>
       <div className="col-start-3 overflow-hidden">
-        <motion.h2
+        <motion.h6
           initial="hidden"
           whileInView="visible"
           variants={variants}
           viewport={{ once: true, amount: 0.5 }}
-          className="uppercase text-lg font-bold"
+          className="pageNumber-page uppercase"
         >
           {page}
-        </motion.h2>
+        </motion.h6>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default PageIndex;
+export default PageIndex

@@ -1,9 +1,9 @@
-import React, { type ReactElement } from "react";
-import { MenuLinks } from "../../../typings/MenuLinks";
-import { AnimatedText } from "../../atoms";
+import React, { type ReactElement } from "react"
+import { MenuLinks } from "../../../typings/MenuLinks"
+import { AnimatedText } from "../../atoms"
 
 interface FooterSocialMediaProps {
-  socialMedia: MenuLinks[];
+  socialMedia: MenuLinks[]
 }
 
 const FooterSocialMedia = ({
@@ -21,7 +21,6 @@ const FooterSocialMedia = ({
               className="text-secondary hover:text-primary text-xl whitespace-pre"
               href={el.link}
               target="blank"
-              aria-label={`Navigate to social media ${el.name}`}
             >
               <AnimatedText text={el.name} once letters />
             </a>
@@ -29,7 +28,7 @@ const FooterSocialMedia = ({
         ))}
       </ul>
     </>
-  );
-};
+  )
+}
 
-export default FooterSocialMedia;
+export default FooterSocialMedia

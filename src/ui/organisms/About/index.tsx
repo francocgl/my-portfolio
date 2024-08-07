@@ -39,9 +39,9 @@ const About = () => {
               alt="profile picture"
             />
           </div>
-          <h3 className="col-start-2 z-1 text-primary relative text-2xl lg:leading-relaxed xl:leading-relaxed lg:text-3xl xl:text-5xl mb-10 md:mb-20">
+          <p className="col-start-2 z-1 text-primary relative text-2xl lg:leading-relaxed xl:leading-relaxed lg:text-3xl xl:text-5xl mb-10 md:mb-20">
             <AnimatedText once text={introduction} />
-          </h3>
+          </p>
           <div
             className="hidden md:block grayscale lg:absolute w-[350px] z-0 overflow-hidden rounded"
             data-scroll="0"
