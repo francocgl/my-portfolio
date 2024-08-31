@@ -6,8 +6,8 @@ export const socialMedia: MenuLinks[] = [
     link: "https://www.github.com/francocgl",
   },
   {
-    name: "Behance",
-    link: "https://www.behance.net/francocgl",
+    name: "Twitter",
+    link: "https://x.com/francomartinc",
   },
   {
     name: "Instagram",

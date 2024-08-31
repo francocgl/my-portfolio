@@ -25,16 +25,26 @@ const Navbar = ({ menu }: NavbarProps): ReactElement => {
   }
 
   return (
-    <nav className="z-10 grid-container no-margin absolute top-5 right-0 left-0 flex justify-between text-black">
-      <div className="col-start-2 overflow-hidden">
-        <motion.p
+    <nav className="z-10 grid-container no-margin absolute top-3 right-0 left-0 flex justify-between items-center text-black">
+      <div className="col-start-2 overflow-y-hidden">
+        <motion.div
           initial="hidden"
           whileInView="visible"
-          className="hidden lg:block text-xl text-secondary"
           variants={navVariants}
+          className="hidden lg:flex w-max items-center gap-4 bg-secondary bg-opacity-40 text-white rounded-full px-4 py-2"
         >
-          {i18n("digitalDesigner")}
-        </motion.p>
+          <div className="w-[35px] h-[35px] overflow-hidden rounded-full opacity-1">
+            <img src="/static/images/profile.jpg" alt="rounded profile img" />
+          </div>
+          <motion.p
+            initial="hidden"
+            whileInView="visible"
+            className="text-md"
+            variants={navVariants}
+          >
+            {i18n("digitalDesigner")}
+          </motion.p>
+        </motion.div>
       </div>
       <div className="col-start-3">
         <ul className="flex justify-between">
