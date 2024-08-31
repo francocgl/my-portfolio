@@ -1,4 +1,4 @@
-import type { MenuLinks } from "../typings/MenuLinks"
+import type { MenuLinks } from "../typings/MenuLinks";
 
 export const socialMedia: MenuLinks[] = [
   {
@@ -6,11 +6,11 @@ export const socialMedia: MenuLinks[] = [
     link: "https://www.gituhub.com/francocgl",
   },
   {
-    name: "Behance",
-    link: "https://www.behance.net/francocgl",
+    name: "Twitter",
+    link: "https://x.com/francomartinc",
   },
   {
     name: "Instagram",
     link: "https://www.instagram.com/francocagliolo",
   },
-]
+];
