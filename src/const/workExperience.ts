@@ -14,7 +14,7 @@ export const workExperience = [
   {
     period: "2022 - 2024",
     position: "Senior Front End Engineer",
-    enterprise: "Global Logic",
+    enterprise: "GlobalLogic",
     description: "expGlobalLogicText",
   },
   {
