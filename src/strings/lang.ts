@@ -3,9 +3,9 @@ export const languages = {
     aboutIntroduction:
       "Hi! I am Franco a Software Engineer and Digital Designer based in Argentina.",
     aboutDescriptionOne:
-      "As an Argentinean football fanatic and crypto enthusiast, I bring my passion for the game into my work as a developer. Working from the comfort of my home, I delve into the intricacies of code, crafting elegant solutions and pushing the boundaries of web development.",
+      "Senior Software Engineer focused on the architecture and development of high-performance web and mobile products. Specialist in the React ecosystem (Next.js, React Native, Expo) and TypeScript, driving scalable solutions through Clean Architecture and modular design.",
     aboutDescriptionTwo:
-      "Aside from my technical skills such as React, Next, Typescript, Redux, Jest, Cypress, Material, Git and others, I possess excellent communication and problem-solving abilities. I believe in effective teamwork, and I love contributing ideas and solutions on team discussions and brainstorming sessions to deliver the best product possible.",
+      "My approach goes beyond code: I optimize the developer experience by establishing quality standards and automated CI/CD pipelines. I collaborate strategically with product and design to translate business requirements into secure, efficient, and user-centered interfaces, ensuring continuous value delivery.",
     menuAbout: "About",
     menuExperience: "Experience",
     menuPortfolio: "Portfolio",
@@ -20,8 +20,8 @@ export const languages = {
       "Working for a financial entity building and maintaining responsive and interactive web applications using React Native. Implementing complex financial dashboards, trading platforms, and user account management systems.",
     expYearsOf: "Years of experience working as",
     portIntro:
-      "During my years at university, I have honed my skills in graphic design, and I am excited to share some of my work.",
-    portGraphicDesign: "My graphic design work",
+      "Here are some of the web projects I have built — from interactive UIs to full-stack apps, each one crafted with attention to detail and a focus on great user experience.",
+    portGraphicDesign: "My portfolio",
     digitalDesigner: "Digital Designer",
     november: "November",
     december: "December",
@@ -37,9 +37,9 @@ export const languages = {
     aboutIntroduction:
       "Hola! Soy Franco, Software Engineer y Diseñador Gráfico Argentino",
     aboutDescriptionOne:
-      "Como buen fanático del fútbol y entusiasta de las criptomonedas, llevo mi pasión por el juego a mi trabajo como ingeniero. Me enfoco en aplicar las últimas tendencias en tecnologías y lenguajes de programación, creando soluciones solventes y escalables para distintos negocios.",
+      "Senior Software Engineer enfocado en la arquitectura y el desarrollo de productos web y móviles de alto rendimiento. Especialista en el ecosistema React (Next.js, React Native, Expo) y TypeScript, impulsando soluciones escalables mediante Clean Architecture y diseño modular.",
     aboutDescriptionTwo:
-      "Aparte de mis habilidades técnicas, como React, Next, Typescript, Redux, Jest, Cypress, Material, Git y otras, poseo excelentes habilidades de comunicación y resolución de problemas. Creo en el trabajo en equipo efectivo y me encanta contribuir con ideas y soluciones en las discusiones de equipo y sesiones de lluvia de ideas para entregar el mejor producto posible.",
+      "Mi enfoque va más allá del código: optimizo la experiencia del equipo de desarrollo estableciendo estándares de calidad y flujos de CI/CD automatizados. Colaboro estratégicamente con producto y diseño para traducir requisitos de negocio en interfaces seguras, eficientes y centradas en el usuario, garantizando una entrega de valor continua.",
     menuAbout: "Acerca",
     menuExperience: "Experiencia",
     menuPortfolio: "Portafolio",
@@ -54,8 +54,8 @@ export const languages = {
       "Trabajo para una entidad financiera construyendo y manteniendo aplicaciones web responsivas e interactivas utilizando React Native. Implementando paneles financieros complejos, plataformas de trading y sistemas de gestión de cuentas de usuario.",
     expYearsOf: "Ańos de experiencia trabajando",
     portIntro:
-      "Durante mis años en la UBA, mejoré mis habilidades en diseño gráfico y esto es parte de mi trabajo.",
-    portGraphicDesign: "Mi diseńo gráfico",
+      "Estos son algunos de los proyectos web que construí — desde interfaces interactivas hasta aplicaciones full-stack, cada uno pensado con atención al detalle y enfocado en una gran experiencia de usuario.",
+    portGraphicDesign: "Mi portafolio",
     digitalDesigner: "Diseñador Digital",
     november: "Noviembre",
     december: "Diciembre",

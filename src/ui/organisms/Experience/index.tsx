@@ -7,7 +7,7 @@ import { WorkExperience, YearsOfExperience } from "../../molecules";
 const Experience = () => {
   return (
     <section
-      className="bg-primary text-black experience-container"
+      className="bg-primary text-black experience-container pb-20 md:pb-40"
       id="experience"
     >
       <PageIndex number={3} page={i18n("menuExperience")} />

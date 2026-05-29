@@ -17,7 +17,7 @@ const Footer = () => (
         <p className=" text-secondary leading-relaxed">
           <AnimatedText text={i18n("footerVersionText")} once />
           <br />
-          <AnimatedText text="@2024" once />
+          <AnimatedText text="@2022" once />
         </p>
       </div>
     </div>
