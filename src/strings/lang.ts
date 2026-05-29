@@ -21,6 +21,13 @@ export const languages = {
     expYearsOf: "Years of experience working as",
     portIntro:
       "Here are some of the web projects I have built — from interactive UIs to full-stack apps, each one crafted with attention to detail and a focus on great user experience.",
+    portViewProject: "View project",
+    portCocosText:
+      "Investment and trading platform developed with React Native, Expo and TypeScript. I integrated RESTful APIs and collaborated closely on UX/UI design alongside large cross-functional teams, working within agile cycles to deliver a polished, high-performance product.",
+    portSnowballText:
+      "A full-stack side project for traders, designed and developed end-to-end. Built with Next.js and Supabase (PostgreSQL), with Zod for type-safe validation and Tailwind for a clean, responsive UI — covering everything from product design to deployment.",
+    portDeramoText:
+      "A full-stack real estate website built entirely on my own, from concept to launch. Developed with PHP and a MySQL database, handling both the backend logic and the frontend experience.",
     portGraphicDesign: "My portfolio",
     digitalDesigner: "Digital Designer",
     november: "November",
@@ -55,6 +62,13 @@ export const languages = {
     expYearsOf: "Ańos de experiencia trabajando",
     portIntro:
       "Estos son algunos de los proyectos web que construí — desde interfaces interactivas hasta aplicaciones full-stack, cada uno pensado con atención al detalle y enfocado en una gran experiencia de usuario.",
+    portViewProject: "Ver proyecto",
+    portCocosText:
+      "Plataforma de inversión y trading desarrollada con React Native, Expo y TypeScript. Integré APIs RESTful y colaboré de cerca en el diseño UX/UI junto a grandes equipos multidisciplinarios, trabajando en ciclos ágiles para entregar un producto pulido y de alto rendimiento.",
+    portSnowballText:
+      "Un side project full-stack para traders, diseñado y desarrollado de punta a punta. Construido con Next.js y Supabase (PostgreSQL), con Zod para validación type-safe y Tailwind para una UI limpia y responsiva — abarcando desde el diseño de producto hasta el despliegue.",
+    portDeramoText:
+      "Una web inmobiliaria full-stack desarrollada íntegramente por mí, desde el concepto hasta el lanzamiento. Construida con PHP y una base de datos MySQL, encargándome tanto de la lógica del backend como de la experiencia del frontend.",
     portGraphicDesign: "Mi portafolio",
     digitalDesigner: "Diseñador Digital",
     november: "Noviembre",

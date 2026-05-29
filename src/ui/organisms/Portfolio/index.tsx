@@ -28,7 +28,7 @@ const Portfolio = () => {
             </h3>
           </div>
         </div>
-        <div className="col-start-3 col-span-2 flex items-start px-2 md:px-0">
+        <div className="col-start-3 col-span-2 flex items-end px-2 md:px-0">
           <p className="text-secondary sm:text-2xl md:w-2/3 sm:leading-relaxed">
             <AnimatedText text={i18n("portIntro")} once />
           </p>
@@ -36,17 +36,20 @@ const Portfolio = () => {
       </div>
 
       <div>
-        {portfolio.map(({ category, month, year, img, name, url }, index) => (
-          <ProjectImage
-            key={name}
-            index={index + 1}
-            name={name}
-            date={`${month} ${year}`}
-            category={category}
-            image={img}
-            link={url}
-          />
-        ))}
+        {portfolio.map(
+          ({ category, description, month, year, img, name, url }, index) => (
+            <ProjectImage
+              key={name}
+              index={index + 1}
+              name={name}
+              date={`${month} ${year}`}
+              category={category}
+              description={description}
+              image={img}
+              link={url}
+            />
+          )
+        )}
       </div>
     </section>
   );
